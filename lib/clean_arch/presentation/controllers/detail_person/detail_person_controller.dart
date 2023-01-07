@@ -15,6 +15,7 @@ class DetailPersonController extends GetxController {
     name: "",
     email: "",
     phone: "",
+    rating: 0,
   ));
 
   RxBool isLoading = false.obs;

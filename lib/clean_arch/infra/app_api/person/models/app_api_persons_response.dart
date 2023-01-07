@@ -22,6 +22,7 @@ class AppApiPersonDetailResponse extends Equatable {
   final String? avatar;
   final String? email;
   final String? phone;
+  final int? rating;
 
   const AppApiPersonDetailResponse({
     required this.name,
@@ -29,6 +30,7 @@ class AppApiPersonDetailResponse extends Equatable {
     required this.avatar,
     required this.email,
     required this.phone,
+    required this.rating,
   });
 
   factory AppApiPersonDetailResponse.fromJson(Map<String, dynamic> json) {
@@ -38,9 +40,19 @@ class AppApiPersonDetailResponse extends Equatable {
       avatar: json['avatar'] != null ? json['avatar'] as String : null,
       email: json['email'] != null ? json['email'] as String : null,
       phone: json['phone'] != null ? json['phone'] as String : null,
+      rating: json['rating'] != null
+          ? int.tryParse(json['rating'].toString())
+          : null,
     );
   }
 
   @override
-  List<Object?> get props => [name, id, avatar];
+  List<Object?> get props => [
+        name,
+        id,
+        avatar,
+        email,
+        phone,
+        rating,
+      ];
 }

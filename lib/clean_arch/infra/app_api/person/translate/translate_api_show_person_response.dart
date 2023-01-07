@@ -9,6 +9,7 @@ class TranslateAppApiShowPersonResponse {
       avatar: response.avatar!,
       email: response.email!,
       phone: response.phone!,
+      rating: response.rating!,
     );
   }
 }

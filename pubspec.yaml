@@ -14,11 +14,11 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
-  
 
   # Fx
   skeleton_animation: ^0.1.4
   cached_network_image: ^3.2.3
+  flutter_rating_bar: ^4.0.1
 
   # Infra
   dio: ^4.0.6

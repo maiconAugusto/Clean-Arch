@@ -6,6 +6,7 @@ class PersonModel extends Equatable {
   final String avatar;
   final String email;
   final String phone;
+  final int rating;
 
   const PersonModel({
     required this.name,
@@ -13,7 +14,8 @@ class PersonModel extends Equatable {
     required this.avatar,
     required this.email,
     required this.phone,
+    required this.rating,
   });
   @override
-  List<Object?> get props => [name, id, avatar];
+  List<Object?> get props => [name, id, avatar, email, phone, rating,];
 }
