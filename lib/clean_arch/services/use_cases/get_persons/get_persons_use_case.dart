@@ -12,7 +12,7 @@ class GetPersonsUseCase implements IGetPersonsUseCase {
 
   @override
   Future<List<PersonModel>> execute() async {
-    final data = (await apiHome.loadData()).toDiaApiPersonListModel();
+    final data = (await apiHome.loadListOfPersons()).toAppApiPersonListModel();
     return data;
   }
 }
