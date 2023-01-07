@@ -30,7 +30,9 @@ class HomePage extends GetView<ListPersonController> {
                   shrinkWrap: true,
                   primary: false,
                   itemBuilder: (context, index) {
-                    return Column(
+                    return GestureDetector(
+                      onTap: () => controller.gotPegaDetail(id: controller.persons[index].id),
+                      child: Column(
                       children: [
                         ListTile(
                             title: Text(controller.persons[index].name),
@@ -65,6 +67,7 @@ class HomePage extends GetView<ListPersonController> {
                           height: 10,
                         ),
                       ],
+                    ),
                     );
                   },
                 ),

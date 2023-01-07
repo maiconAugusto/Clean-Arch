@@ -5,7 +5,7 @@ class TranslateAppApiPersonListResponse {
   static List<PersonModel> toAppApiPersonListModel(AppApiPersonListResponse response) {
     final List<PersonModel> person= <PersonModel>[];
     for (var i in response.persons ?? []) {
-      final PersonModel model = PersonModel(name: i.name, id: i.id, avatar: i.avatar);
+      final PersonModel model = PersonModel(name: i.name, id: i.id, avatar: i.avatar, email: i.email, phone: i.phone);
       person.add(model);
     }
     return person;

@@ -20,11 +20,15 @@ class AppApiPersonDetailResponse extends Equatable {
   final String? name;
   final String? id;
   final String? avatar;
+  final String? email;
+  final String? phone;
 
   const AppApiPersonDetailResponse({
     required this.name,
     required this.id,
     required this.avatar,
+    required this.email,
+    required this.phone,
   });
 
   factory AppApiPersonDetailResponse.fromJson(Map<String, dynamic> json) {
@@ -32,6 +36,8 @@ class AppApiPersonDetailResponse extends Equatable {
       name: json['name'] != null ? json['name'] as String : null,
       id: json['id'] != null ? json['id'] as String : null,
       avatar: json['avatar'] != null ? json['avatar'] as String : null,
+      email: json['email'] != null ? json['email'] as String : null,
+      phone: json['phone'] != null ? json['phone'] as String : null,
     );
   }
 

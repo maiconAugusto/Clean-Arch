@@ -1,3 +1,4 @@
 abstract class AppRoutes {
-  static const variation = "/variation";
+  static const persons = "/persons";
+  static const personDetail = "/person-detail";
 }

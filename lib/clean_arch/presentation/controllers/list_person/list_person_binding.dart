@@ -8,7 +8,7 @@ class ListPersonBinding implements Bindings {
   @override
   void dependencies() {
     Get.lazyPut<ListPersonController>(() => ListPersonController(
-        homeUseCase:
+        getPersonUseCase:
             GetPersonsUseCase(apiHome: AppApiPerson(dioHttp: DioHttp()))));
   }
 }

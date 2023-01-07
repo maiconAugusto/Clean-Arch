@@ -7,6 +7,8 @@ class TranslateAppApiShowPersonResponse {
       name: response.name!,
       id: response.id!,
       avatar: response.avatar!,
+      email: response.email!,
+      phone: response.phone!,
     );
   }
 }

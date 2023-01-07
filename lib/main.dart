@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: AppRoutes.variation,
+      initialRoute: AppRoutes.persons,
       getPages: AppPages.pages,
     );
   }
